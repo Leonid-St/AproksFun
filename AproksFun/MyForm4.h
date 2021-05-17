@@ -5,6 +5,7 @@
 #include <math.h>
 #include <Windows.h>
 #include <ctime>
+#include "MyFormTH4.h"
 namespace AproksFun {
 
 	using namespace System;
@@ -53,6 +54,8 @@ namespace AproksFun {
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Button^ button2;
+
 
 	private:
 		/// <summary>
@@ -68,11 +71,11 @@ namespace AproksFun {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm4::typeid));
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^ legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea3 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^ legend3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::Series^ series9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->label5 = (gcnew System::Windows::Forms::Label());
@@ -85,6 +88,7 @@ namespace AproksFun {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -93,7 +97,7 @@ namespace AproksFun {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(18, 17);
+			this->pictureBox1->Location = System::Drawing::Point(-4, 12);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(324, 197);
@@ -103,37 +107,37 @@ namespace AproksFun {
 			// 
 			// chart1
 			// 
-			chartArea1->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea1);
-			legend1->Name = L"Legend1";
-			this->chart1->Legends->Add(legend1);
-			this->chart1->Location = System::Drawing::Point(349, 17);
+			chartArea3->Name = L"ChartArea1";
+			this->chart1->ChartAreas->Add(chartArea3);
+			legend3->Name = L"Legend1";
+			this->chart1->Legends->Add(legend3);
+			this->chart1->Location = System::Drawing::Point(316, 2);
 			this->chart1->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->chart1->Name = L"chart1";
-			series1->ChartArea = L"ChartArea1";
-			series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
-			series1->Color = System::Drawing::Color::Lime;
-			series1->Legend = L"Legend1";
-			series1->MarkerBorderColor = System::Drawing::Color::White;
-			series1->Name = L"Series1";
-			series2->ChartArea = L"ChartArea1";
-			series2->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
-			series2->Color = System::Drawing::Color::OliveDrab;
-			series2->Legend = L"Legend1";
-			series2->MarkerBorderColor = System::Drawing::Color::White;
-			series2->Name = L"Series2";
-			series3->BorderWidth = 3;
-			series3->ChartArea = L"ChartArea1";
-			series3->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Line;
-			series3->Color = System::Drawing::Color::Black;
-			series3->Legend = L"Legend1";
-			series3->MarkerBorderColor = System::Drawing::Color::White;
-			series3->MarkerColor = System::Drawing::Color::White;
-			series3->Name = L"Series3";
-			this->chart1->Series->Add(series1);
-			this->chart1->Series->Add(series2);
-			this->chart1->Series->Add(series3);
-			this->chart1->Size = System::Drawing::Size(691, 491);
+			series7->ChartArea = L"ChartArea1";
+			series7->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
+			series7->Color = System::Drawing::Color::Lime;
+			series7->Legend = L"Legend1";
+			series7->MarkerBorderColor = System::Drawing::Color::White;
+			series7->Name = L"Series1";
+			series8->ChartArea = L"ChartArea1";
+			series8->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Point;
+			series8->Color = System::Drawing::Color::OliveDrab;
+			series8->Legend = L"Legend1";
+			series8->MarkerBorderColor = System::Drawing::Color::White;
+			series8->Name = L"Series2";
+			series9->BorderWidth = 3;
+			series9->ChartArea = L"ChartArea1";
+			series9->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Line;
+			series9->Color = System::Drawing::Color::Black;
+			series9->Legend = L"Legend1";
+			series9->MarkerBorderColor = System::Drawing::Color::White;
+			series9->MarkerColor = System::Drawing::Color::White;
+			series9->Name = L"Series3";
+			this->chart1->Series->Add(series7);
+			this->chart1->Series->Add(series8);
+			this->chart1->Series->Add(series9);
+			this->chart1->Size = System::Drawing::Size(761, 491);
 			this->chart1->TabIndex = 41;
 			this->chart1->Text = L"chart1";
 			// 
@@ -218,7 +222,7 @@ namespace AproksFun {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(514, 518);
+			this->pictureBox2->Location = System::Drawing::Point(510, 502);
 			this->pictureBox2->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(526, 136);
@@ -226,12 +230,23 @@ namespace AproksFun {
 			this->pictureBox2->TabIndex = 43;
 			this->pictureBox2->TabStop = false;
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(18, 514);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(147, 54);
+			this->button2->TabIndex = 44;
+			this->button2->Text = L"Theory";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm4::button2_Click);
+			// 
 			// MyForm4
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 21);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::GradientActiveCaption;
-			this->ClientSize = System::Drawing::Size(1054, 671);
+			this->ClientSize = System::Drawing::Size(1054, 634);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->chart1);
@@ -317,5 +332,11 @@ private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 
 }
 
+private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyFormTH4^ l = gcnew MyFormTH4();
+	l->Show();
+}
 };
 }

@@ -10,6 +10,7 @@
 #include <cstdio>
 #include<algorithm>
 #include<clocale>
+#include "MyFormTH.h"
 
 using namespace std;
 
@@ -85,6 +86,7 @@ namespace AproksFun {
 
 
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Button^ button2;
 
 
 
@@ -124,6 +126,7 @@ namespace AproksFun {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -131,9 +134,9 @@ namespace AproksFun {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(240, 118);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(36, 26);
+			this->textBox1->Size = System::Drawing::Size(36, 30);
 			this->textBox1->TabIndex = 1;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
@@ -143,14 +146,14 @@ namespace AproksFun {
 			this->label1->Location = System::Drawing::Point(120, 118);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(114, 19);
+			this->label1->Size = System::Drawing::Size(146, 25);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Кол во точек :=";
 			// 
 			// buttonAprox
 			// 
 			this->buttonAprox->Location = System::Drawing::Point(16, 361);
-			this->buttonAprox->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->buttonAprox->Margin = System::Windows::Forms::Padding(4);
 			this->buttonAprox->Name = L"buttonAprox";
 			this->buttonAprox->Size = System::Drawing::Size(108, 44);
 			this->buttonAprox->TabIndex = 0;
@@ -162,7 +165,7 @@ namespace AproksFun {
 			// 
 			this->button1->BackColor = System::Drawing::SystemColors::Control;
 			this->button1->Location = System::Drawing::Point(12, 118);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(104, 66);
 			this->button1->TabIndex = 3;
@@ -173,7 +176,7 @@ namespace AproksFun {
 			// buttonGraph
 			// 
 			this->buttonGraph->Location = System::Drawing::Point(164, 361);
-			this->buttonGraph->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->buttonGraph->Margin = System::Windows::Forms::Padding(4);
 			this->buttonGraph->Name = L"buttonGraph";
 			this->buttonGraph->Size = System::Drawing::Size(132, 44);
 			this->buttonGraph->TabIndex = 4;
@@ -187,19 +190,19 @@ namespace AproksFun {
 			this->label3->Location = System::Drawing::Point(4, 23);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(240, 19);
+			this->label3->Size = System::Drawing::Size(314, 25);
 			this->label3->TabIndex = 6;
 			this->label3->Text = L"Способ задачи начальных значений";
 			// 
 			// listBox1
 			// 
 			this->listBox1->FormattingEnabled = true;
-			this->listBox1->ItemHeight = 19;
+			this->listBox1->ItemHeight = 23;
 			this->listBox1->Items->AddRange(gcnew cli::array< System::Object^  >(1) { L"1)Ввод координат X и Y с клавиатуры" });
 			this->listBox1->Location = System::Drawing::Point(12, 47);
-			this->listBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->listBox1->Margin = System::Windows::Forms::Padding(4);
 			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(283, 42);
+			this->listBox1->Size = System::Drawing::Size(283, 27);
 			this->listBox1->TabIndex = 7;
 			this->listBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::listBox1_SelectedIndexChanged);
 			// 
@@ -209,7 +212,7 @@ namespace AproksFun {
 			this->label4->Location = System::Drawing::Point(8, 95);
 			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(155, 19);
+			this->label4->Size = System::Drawing::Size(200, 25);
 			this->label4->TabIndex = 8;
 			this->label4->Text = L"Для первого способа:";
 			// 
@@ -221,7 +224,7 @@ namespace AproksFun {
 			legend1->Name = L"Legend1";
 			this->chart1->Legends->Add(legend1);
 			this->chart1->Location = System::Drawing::Point(347, 3);
-			this->chart1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->chart1->Margin = System::Windows::Forms::Padding(4);
 			this->chart1->Name = L"chart1";
 			series1->BorderWidth = 2;
 			series1->ChartArea = L"ChartArea1";
@@ -244,7 +247,7 @@ namespace AproksFun {
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(29, 443);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(231, 37);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -252,12 +255,23 @@ namespace AproksFun {
 			this->pictureBox1->TabStop = false;
 			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm::pictureBox1_Click);
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(16, 200);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(106, 65);
+			this->button2->TabIndex = 21;
+			this->button2->Text = L"Theory";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 19);
+			this->AutoScaleDimensions = System::Drawing::SizeF(10, 23);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
 			this->ClientSize = System::Drawing::Size(1159, 497);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->chart1);
 			this->Controls->Add(this->label4);
@@ -271,7 +285,7 @@ namespace AproksFun {
 			this->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->Text = L"Апроксимация функции:";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->EndInit();
@@ -719,6 +733,10 @@ private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBoxA_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyFormTH^ l = gcnew MyFormTH();
+	l->Show();
 }
 };
 }

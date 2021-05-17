@@ -79,7 +79,7 @@ namespace AproksFun {
 			// textBoxEps
 			// 
 			this->textBoxEps->Location = System::Drawing::Point(244, 159);
-			this->textBoxEps->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBoxEps->Margin = System::Windows::Forms::Padding(4);
 			this->textBoxEps->Name = L"textBoxEps";
 			this->textBoxEps->Size = System::Drawing::Size(93, 22);
 			this->textBoxEps->TabIndex = 28;
@@ -97,7 +97,7 @@ namespace AproksFun {
 			// textBoxB
 			// 
 			this->textBoxB->Location = System::Drawing::Point(132, 155);
-			this->textBoxB->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBoxB->Margin = System::Windows::Forms::Padding(4);
 			this->textBoxB->Name = L"textBoxB";
 			this->textBoxB->Size = System::Drawing::Size(65, 22);
 			this->textBoxB->TabIndex = 26;
@@ -106,7 +106,7 @@ namespace AproksFun {
 			// textBoxA
 			// 
 			this->textBoxA->Location = System::Drawing::Point(36, 155);
-			this->textBoxA->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBoxA->Margin = System::Windows::Forms::Padding(4);
 			this->textBoxA->Name = L"textBoxA";
 			this->textBoxA->Size = System::Drawing::Size(64, 22);
 			this->textBoxA->TabIndex = 25;
@@ -142,7 +142,7 @@ namespace AproksFun {
 					L"3)Метод левых квадратов"
 			});
 			this->listBox2->Location = System::Drawing::Point(16, 202);
-			this->listBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->listBox2->Margin = System::Windows::Forms::Padding(4);
 			this->listBox2->Name = L"listBox2";
 			this->listBox2->Size = System::Drawing::Size(283, 52);
 			this->listBox2->TabIndex = 33;
@@ -150,7 +150,7 @@ namespace AproksFun {
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(16, 278);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(100, 28);
 			this->button2->TabIndex = 31;
@@ -163,7 +163,7 @@ namespace AproksFun {
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.InitialImage")));
 			this->pictureBox1->Location = System::Drawing::Point(36, 15);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(303, 133);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -197,7 +197,7 @@ namespace AproksFun {
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->MaximizeBox = false;
 			this->Name = L"MyForm2";
 			this->Text = L"Laba 2";

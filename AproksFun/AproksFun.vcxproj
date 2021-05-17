@@ -125,6 +125,9 @@
     <ClCompile Include="MyForm3.cpp" />
     <ClCompile Include="MyForm4.cpp" />
     <ClCompile Include="MyForm5.cpp" />
+    <ClCompile Include="MyFormTH.cpp" />
+    <ClCompile Include="MyFormTH3.cpp" />
+    <ClCompile Include="MyFormTH4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -143,6 +146,15 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyForm5.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyFormTH.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyFormTH3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyFormTH4.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -164,6 +176,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm5.resx">
       <DependentUpon>MyForm5.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormTH.resx">
+      <DependentUpon>MyFormTH.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormTH3.resx">
+      <DependentUpon>MyFormTH3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormTH4.resx">
+      <DependentUpon>MyFormTH4.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

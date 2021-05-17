@@ -49,6 +49,7 @@ namespace AproksFun {
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart1;
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	protected:
 
 	private:
@@ -78,14 +79,16 @@ namespace AproksFun {
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(13, 277);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(12, 241);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(135, 38);
 			this->button1->TabIndex = 0;
@@ -95,8 +98,8 @@ namespace AproksFun {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(178, 277);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Location = System::Drawing::Point(14, 300);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(133, 38);
 			this->button2->TabIndex = 1;
@@ -126,7 +129,7 @@ namespace AproksFun {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(47, 15);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(87, 22);
 			this->textBox1->TabIndex = 4;
@@ -136,7 +139,7 @@ namespace AproksFun {
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(189, 15);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox2->Margin = System::Windows::Forms::Padding(4);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(87, 22);
 			this->textBox2->TabIndex = 5;
@@ -155,7 +158,7 @@ namespace AproksFun {
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(68, 47);
-			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox3->Margin = System::Windows::Forms::Padding(4);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(112, 22);
 			this->textBox3->TabIndex = 7;
@@ -165,9 +168,9 @@ namespace AproksFun {
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(12, 77);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(319, 175);
+			this->pictureBox1->Size = System::Drawing::Size(333, 156);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 8;
 			this->pictureBox1->TabStop = false;
@@ -178,8 +181,8 @@ namespace AproksFun {
 			this->chart1->ChartAreas->Add(chartArea1);
 			legend1->Name = L"Legend1";
 			this->chart1->Legends->Add(legend1);
-			this->chart1->Location = System::Drawing::Point(367, 15);
-			this->chart1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->chart1->Location = System::Drawing::Point(367, -4);
+			this->chart1->Margin = System::Windows::Forms::Padding(4);
 			this->chart1->Name = L"chart1";
 			series1->BorderWidth = 3;
 			series1->ChartArea = L"ChartArea1";
@@ -187,16 +190,27 @@ namespace AproksFun {
 			series1->Legend = L"Legend1";
 			series1->Name = L"Series1";
 			this->chart1->Series->Add(series1);
-			this->chart1->Size = System::Drawing::Size(763, 485);
+			this->chart1->Size = System::Drawing::Size(898, 237);
 			this->chart1->TabIndex = 9;
 			this->chart1->Text = L"chart1";
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(305, 240);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(960, 466);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox2->TabIndex = 10;
+			this->pictureBox2->TabStop = false;
 			// 
 			// MyForm3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::GradientActiveCaption;
-			this->ClientSize = System::Drawing::Size(1145, 514);
+			this->ClientSize = System::Drawing::Size(1260, 718);
+			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->chart1);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->textBox3);
@@ -207,12 +221,13 @@ namespace AproksFun {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm3";
 			this->Text = L"Метод трапеций ";
 			this->Load += gcnew System::EventHandler(this, &MyForm3::MyForm3_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

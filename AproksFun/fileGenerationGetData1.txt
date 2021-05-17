@@ -1,0 +1,1 @@
+1.1 -nan(ind) 1.77143 -nan(ind) 2.44286 -nan(ind) 3.11429 -nan(ind) 3.78571 -nan(ind) 4.45714 -nan(ind) 5.12857 -nan(ind) 5.8 -nan(ind) 
